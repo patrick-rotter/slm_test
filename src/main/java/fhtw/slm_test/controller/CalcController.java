@@ -11,4 +11,9 @@ public class CalcController {
     Double calcCmFromInch(@PathVariable Double num) {
         return num * 2.54;
     }
+
+    @GetMapping("/yardToMeter/{num}")
+    Double calcYardToMeter(@PathVariable Double num) {
+        return num / 1.094;
+    }
 }
